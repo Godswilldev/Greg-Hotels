@@ -1,0 +1,219 @@
+/* Header colour
+#2f89fc
+body colour green
+#21cc7a
+body text colour
+#999999 */
+body{
+    margin: 0;
+    padding: 0;
+    color:#999999;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    color: black;
+}
+span{
+    color: rgb(169, 250, 6);
+}
+i{
+    color:rgba(47, 137, 252, 0.7) ;
+}
+
+/* Navbar */
+.navbar{
+    padding: 2rem 7rem;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color:  rgb(169, 250, 6);
+    
+}
+.nav-item{
+    padding-left: 2rem;
+    
+}
+
+#bg-dark{
+    background-color:transparent;
+}
+
+/* carousel */
+.carousel-item{
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); 
+}
+.text{
+    position: relative;
+    margin: 14%;
+    left: 12%;
+    padding: 0 15rem;
+}
+
+.text h2{
+text-align: left;
+line-height: 1.5;
+font-size: 1rem;
+text-transform: uppercase;
+font-family: "Nunito Sans", Arial, sans-serif;
+font-weight: 700;
+color: #f5e4c3;
+display: inline-block;
+position: relative;
+letter-spacing: 4px;
+}
+.text h1{
+    font-size: 6vw;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+}
+/* Media Queries */
+
+@media (max-width: 992px){
+    .text{
+        position: relative;
+        margin: 18%;
+        left: 7%;
+        padding: 0 10rem;
+    }
+    #bg-dark:focus-within{
+        background-color:#2f89fc;
+    }
+    
+}
+@media (max-width: 786px){
+    .text{
+        position: relative;
+        margin: 30%;
+        left: 7%;
+        padding:2rem 1rem;
+        font-size: 2rem;
+    }
+    #bg-dark:focus-within{
+        background-color:#2f89fc;
+    }
+
+}
+
+@media (max-width: 576px){
+    .text{
+        position: relative;
+        margin: 30%;
+        left: 5%;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        transform: scale(1.4);
+    }
+  
+#bg-dark:focus-within{
+    background-color:#2f89fc;
+}
+
+}
+
+
+
+
+
+/* Body-Section-1 Styles */
+
+.body-section-1-text{
+    text-align: center;
+    margin: 5rem 0;
+}
+.body-section-1-text h2{
+    line-height: 1.5;
+font-size: 1.1rem;
+text-transform: uppercase;
+font-family: "Nunito Sans", Arial, sans-serif;
+font-weight: 700;
+color: #21cc7a;
+display: inline-block;
+letter-spacing: 4px;
+}
+
+.body-section-1-text h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.services{
+    background-color: #0f35f1;
+    height: 8rem;
+    margin: 2rem 0.6rem;
+}
+
+
+.services p{
+    
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.font-awesome-icon{
+    background-color: white;
+    border-radius: 100%;
+    padding: 2rem;
+    position: relative;
+    top: -3rem;
+    left: 0.7rem;
+    box-shadow: 0px -4px 15px -15px rgba(0, 0, 0, 0.9);
+}
+.fas{
+    position: relative;
+    top: 0.2rem;
+}
+.row{
+    margin-left: 3rem;
+}
+
+@media (max-width: 576px){
+
+    .fas{
+        position: relative;
+        left: 0rem;
+    }
+
+    .font-awesome-icon{
+        /* background-color: white; */
+        border-radius: 100%;
+        padding: 2rem;
+        position: relative;
+        top: -3rem;
+        left: 7rem;
+        box-shadow: none;
+    }
+    .fas{
+        position: relative;
+        top: 0.6rem;
+    }
+}
